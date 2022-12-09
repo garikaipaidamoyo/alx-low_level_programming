@@ -7,8 +7,7 @@
  */
 int main(void)
 {
-	char i = 'a',
-
+	char i = 'a';
 	while (i <= 'z')
 	{
 		if (i == 'q' || i == 'e')
