@@ -14,7 +14,8 @@ int main(void)
 	{
 		putchar(i);
 		i++;
-	while (n < 'f')
+	}
+	while (n < 'g')
 	{
 		putchar(n);
 		n++;
