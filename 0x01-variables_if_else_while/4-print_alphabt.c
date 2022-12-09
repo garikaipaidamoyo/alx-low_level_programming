@@ -7,11 +7,10 @@
  */
 int main(void)
 {
-	char i = 'a';
+	char 'a';
 
-	while (i <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		i++;
 		if (i == 'e' || i == 'q')
 		{
 			continue;
