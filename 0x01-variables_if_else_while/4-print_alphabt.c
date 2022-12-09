@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-	char i = 'a';
+	char i;
 
-	while (i <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (i == 'e' || i == 'q')
 		{
@@ -17,7 +17,6 @@ int main(void)
 		}
 		putchar(i);
 	}
-	i++;
 	putchar('\n');
 	return (0);
 }
