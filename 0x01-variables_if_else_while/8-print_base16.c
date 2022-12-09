@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	char i = 0; n = 'a';
+	int i = 0;
+        char n = 'a';
 
 	while (i < 10)
 	{
