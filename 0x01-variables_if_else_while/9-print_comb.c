@@ -11,8 +11,8 @@ int main(void)
 
 	while (w <= '9')
 	{
-		w++;
 		putchar (w);
+		w++;
 
 		if (w != '9')
 		{
