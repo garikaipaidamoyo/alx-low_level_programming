@@ -7,13 +7,11 @@
  */
 int main(void)
 {
-	int w = '0';
+	int w;
 
-	while (w <= '9')
+	for (w = '0'; w <= '9'; w++)
 	{
 		putchar (w);
-		w++;
-
 		if (w != '9')
 		{
 			putchar (',');
