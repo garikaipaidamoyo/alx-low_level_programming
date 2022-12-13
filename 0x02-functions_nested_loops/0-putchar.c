@@ -2,6 +2,7 @@
 #include "main.h"
 
 /**
+ * main - Entry point
  * _putchar - writes the character c to stdout
  * @c: The character to print
  *
