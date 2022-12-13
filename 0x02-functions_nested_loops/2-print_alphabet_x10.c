@@ -5,18 +5,20 @@
  * print_alphabet_x10 - Entry point
  *
  */
+
 void print_alphabet_x10(void)
 {
-	char c = 1, j;
+	int i = 1;
 
-	while (c <= 10)
+	while (i <= 10)
 	{
+		char j;
 		for (j = 'a'; j <= 'z'; j++)
 		{
 			_putchar(j);
 			j++;
 		}
 		putchar('\n');
-		c++;
+		i++;
 	}
 }
