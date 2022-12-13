@@ -11,12 +11,15 @@ int _islower(int c)
 {
 	int i;
 
-	if (i > 98 && i < 123)
+	for (i = 97; i <= 122; 1++)
+	{
+		if (i > 96 && i < 123)
 	{
 		return (1);
 	}
 	else
 	{
 		return (0);
+	}
 	}
 }
