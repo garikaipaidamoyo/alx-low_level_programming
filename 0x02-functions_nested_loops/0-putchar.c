@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h" 
 
 /**
@@ -7,7 +8,8 @@
  * Return: Always 0.
  */
 
-int _putchar(char c)
+int _putchar(char c);
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
