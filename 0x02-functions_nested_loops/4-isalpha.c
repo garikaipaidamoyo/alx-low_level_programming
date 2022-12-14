@@ -9,9 +9,9 @@
  */
 int _isalpha(int c)
 {
-	if (c > '96' && c < '123')
+	if (c > 'a' && c < 'z')
 	{
-		for (c = '65', c <= '90', c++)
+		for (c = 'A', c <= 'Z', c++)
 		{
 			return (1);
 		}
