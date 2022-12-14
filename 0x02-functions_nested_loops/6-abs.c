@@ -7,12 +7,12 @@
  * Return: -1 on success
  * on failure return 1
  */
-int _abs(int c)
+int _abs(int r)
 {
-	if (c < 0)
+	if (r < 0)
 	{
-		return (-c);
+		return (-r);
 	}
 	else
-		return (c);
+		return (r);
 }
