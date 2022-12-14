@@ -2,7 +2,7 @@
 
 /**
  * _abs - computes the absolute value of an integer to stdout.
- * @c: the integer to print
+ * @r: the integer to print
  *
  * Return: -1 on success
  * on failure return 1
