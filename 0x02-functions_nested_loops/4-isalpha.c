@@ -11,7 +11,7 @@ int _isalpha(int c)
 {
 	if (c > 'a' && c < 'z')
 	{
-		for (c = 'A', c <= 'Z', c++)
+		for (c = 'A'; c <= 'Z'; c++)
 		{
 			return (1);
 		}
