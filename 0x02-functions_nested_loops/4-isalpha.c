@@ -15,13 +15,10 @@ int _isalpha(int c)
 		{
 			return (1);
 		}
-		return (0);
-	}
-	else if
-	{
 		return (1);
 	}
 	else
-	return (0);
+		return (0);
+
 
 }
