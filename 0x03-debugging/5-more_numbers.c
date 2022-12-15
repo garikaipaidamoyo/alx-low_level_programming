@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - prints 10 times the integers
+ * more_numbers - prints 10 times the integers.
+ *
  */
 
 void more_numbers(void)
@@ -14,4 +15,5 @@ void more_numbers(void)
 		_putchar(i **'10');
 
 	}
-	_putchar('\n')
+	_putchar('\n');
+}
