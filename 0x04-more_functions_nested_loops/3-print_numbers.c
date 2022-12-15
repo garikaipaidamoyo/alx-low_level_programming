@@ -2,6 +2,8 @@
 
 /**
  * print_numbers - prints the integer
+ *
+ * Return: Always 0.
  */
 
 void print_numbers(void)
@@ -11,6 +13,6 @@ void print_numbers(void)
 	for (i = 0; i < 9; i++)
 	{
 		_putchar(i);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
