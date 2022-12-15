@@ -4,8 +4,10 @@
  * _isdigit - checks for a digit
  * @c: The integer  prints
  *
- * Return: 1 on success, on failure 0
+ * Return: 1 on success
+ * On failure return 0
  */
+
 int _isdigit(int c)
 {
 	if (c >= 0 && c <= 9)
