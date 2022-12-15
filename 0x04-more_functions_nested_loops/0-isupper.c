@@ -8,14 +8,16 @@
  */
 int _isupper(int c)
 {
-	int c;
-
 	c = 'A';
-	for (c = 'A'; c <= 'Z'; c++)
+	if ((c >= 'A') && (c <= 'Z'))
 	{
-		_putchar(c);
 		return (1);
+		c++;
 	}
-	_putchar('\n');
-	return (0);
+	else
+	{
+		return (0);
+	}
+	_putchar('\n')
+
 }
