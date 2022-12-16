@@ -2,22 +2,20 @@
 
 /**
  * print_line - draws a straight line in the terminal
- * @n:  The integer prints
- *
- * Return: _ on success
- * On failure return \n
+ * @n: times character should b printed
+ * Return: no return.
  */
 
 void print_line(int n)
 {
-	int i;
+	char c;
 
-	if (n <= 0)
-	{
-		for (i = 1; i < n; i++)
+	if (n > 0)
+		for (c = 0; c < n; c++)
 		{
-			_putchar('_');
+			_putchar (95);
 		}
-		_putchar('\n')
-	}
+	_putchar ('\n');
 }
+
+
