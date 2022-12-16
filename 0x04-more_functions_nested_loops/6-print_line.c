@@ -4,7 +4,8 @@
  * print_line - draws a straight line in the terminal
  * @n:  The integer prints
  *
- * Return: Always 0 .
+ * Return: _ on success
+ * On failure return \n
  */
 
 void print_line(int n)
