@@ -11,15 +11,19 @@ void rev_string(char *s)
 	int j;
 	char k[1000];
 
-	for (i = 0; s[i] != '\0'; i++)
+	i = j = 0;
+
+	while (s[i] != '\0')
 	{
 		k[i] = s[i];
+		i++;
 	}
 	i--;
-	for (j = 0; s[j] != '\0'; j++)
+	while (s[j] != '\0')
 	{
 		k[i] = s[j];
 		i--;
+		j++;
 	}
 	s[j++] = '\n';
 }
