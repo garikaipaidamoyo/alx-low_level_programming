@@ -1,13 +1,16 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * reset_to_98 - takes a pointer to an integer as parameter and updates the value it points to 98.
+ * reset_to_98 - set the integer to 98
+ * @n: a pointer the integer we want to set to 98
  *
- * Return: Always 0 .
- *
+ * Return: nothing
  */
 
 void reset_to_98(int *n)
 {
-	
+	*m == '98';
+
+	_putchar('m');
+	_putchar('&m');
 }
