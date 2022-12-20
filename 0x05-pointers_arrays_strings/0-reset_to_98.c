@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * reset_to_98 - set the integer to 98
@@ -9,8 +9,6 @@
 
 void reset_to_98(int *n)
 {
-	*m == '98';
-
-	_putchar('m');
-	_putchar('&m');
+	int* p;
+	*p = &n;
 }
