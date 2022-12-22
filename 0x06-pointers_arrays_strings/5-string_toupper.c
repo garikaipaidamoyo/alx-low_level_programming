@@ -7,15 +7,15 @@
  * Return: Always 0 on success
  */
 
-char *string_toupper(char *k)
+char *string_toupper(char *s)
 {
 	int i = 0;
 
-	while (k[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (k[i] >= 'a' && k[i] <= 'z')
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			k[i] -= 32;
+			s[i] -= 32;
 		}
 		i++;
 	}
