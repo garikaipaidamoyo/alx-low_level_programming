@@ -2,9 +2,9 @@
 
 /**
  * string_toupper - changes all lowercase letters of a string to uppercase
- * @k: The character to print
+ * @k: The character to change
  *
- * Returns: Always 0 .
+ * Return: var char
  */
 
 char *string_toupper(char *k)
@@ -13,5 +13,5 @@ char *string_toupper(char *k)
 
 	while (k[i] != '\0')
 		if (k[i] > 96 && k[i] < 123;)
-			k[i] -= 96 -90;
+			k[i] -= 96 - 90;
 }
