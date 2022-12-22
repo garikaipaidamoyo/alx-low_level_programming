@@ -13,5 +13,5 @@ char *string_toupper(char *k)
 
 	while (k[i] != '\0')
 		if (k[i] > 96 && k[i] < 123;)
-			k[i] -= 96 - 90;
+			k[i] -= -32
 }
