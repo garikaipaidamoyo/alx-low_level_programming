@@ -4,7 +4,7 @@
  * string_toupper - changes all lowercase letters of a string to uppercase
  * @k: The character to change
  *
- * Return: var char
+ * Return: Always 0 on success
  */
 
 char *string_toupper(char *k)
@@ -19,4 +19,5 @@ char *string_toupper(char *k)
 		}
 	i++;
 	}
+	return (0);
 }
