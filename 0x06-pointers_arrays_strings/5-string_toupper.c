@@ -15,7 +15,7 @@ char *string_toupper(char *k)
 	{
 		if (k[i] >= 'a' && k[i] <= 'z')
 		{
-			k[i] = - 32;
+			k[i] -= 32;
 		}
 	i++;
 	}
