@@ -1,22 +1,30 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * _strchr - set memory function
- * @c: Character type
- * @s: pointer to array
  *
- * Return: s 
+ * @s: pointer to array
+ * @c: char type
+ *
+ *
+ * Return: s
  */
 
 char *_strchr(char *s, char c)
 {
-	while(s[0] != '\0')
+
+	while (s[0] != '\0')
 	{
-		if(s[0] == c)
-			return(s);
-		else lf (s[1] == c)
-			return(s + 1);
+
+		if (s[0] == c)
+
+			return (s);
+
+		else if (s[1] == c)
+
+			return (s + 1);
+
 		s++;
 	}
-		return(s + 1);
+	return (s + 1);
 }
