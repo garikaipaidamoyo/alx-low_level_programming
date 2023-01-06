@@ -10,4 +10,8 @@
 
 int _pow_recursion(int x, int y)
 {
+	if (y < 0)
+		return (-1);
+	else lf (y <= 1)
+		return(1);
 
