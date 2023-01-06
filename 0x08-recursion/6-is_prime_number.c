@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * checker - returns a prime number
+ * checker - checks for a prime number
  * @n: prime number
  * @base: base
  *
@@ -20,7 +20,7 @@ int checker(int n, int base)
 	return (1);
 }
 /**
- * is_prime_number - returns prime number
+ * is_prime_number - checks for a prime number
  * @n: prime number
  */
 
