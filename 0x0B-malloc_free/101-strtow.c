@@ -75,10 +75,10 @@ char **strtow(char *str)
 
 	for (w = 0; w < words; w++)
 	{
-		while (str[index] == ' ')
+		while (str[i] == ' ')
 			i++;
 
-		letters = word_len(str + index);
+		letters = word_len(str + i);
 
 		strings[w] = malloc(sizeof(char) * (letters + 1));
 
