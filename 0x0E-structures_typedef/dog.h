@@ -4,7 +4,7 @@
 /**
  * struct dog - dog data
  * @name: name of the dog
- * @float: age of the dog
+ * @age: age of the dog
  * @owner: owner of the dog
  *
  * Description: meta data and type of dog struct
