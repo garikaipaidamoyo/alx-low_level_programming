@@ -3,9 +3,9 @@
 
 /**
  * @char - name of the dog
- * @float - age of the dog 
+ * @float - age of the dog
  * @char -  second char, owner of the dog
- */ 
+ */
 struct dog
 {
 	char *name;
