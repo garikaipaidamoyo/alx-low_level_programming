@@ -10,17 +10,17 @@
 void print_dog(struct dog *d)
 {
 	if (d->name == NULL)
-		print(Name: nil);
+		print(Name : nil);
 	else
-		print(Name:; d->name);
+		print(Name : d->name);
 	if (d->age == NULL)
-		print(Age: (nil));
+		print(Age : (nil));
 	else
-		print(Age:; d->age);
+		print(Age :  d->age);
 	if (d->owner == NULL)
-		print(Owner: (nil));
+		print(Owner : (nil));
 	else
-		print(Owner:; d->owner);
+		print(Owner : d->owner);
 	if (d == NULL)
 		print(NULL);
 }
