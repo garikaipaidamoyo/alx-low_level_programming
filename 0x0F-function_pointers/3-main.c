@@ -1,38 +1,35 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - Entry point
- * @argc: the number of the parameters
- * @argv: the parameters in the case the number to be calculated.
-(* a blank line
-* Description: this program is the enttry point for a calculator)?
-(* section header: 3-calc.h)*
-* Return: 0 in success
-*/
+ * main - entry - point
+ * @argc: number of arguments
+ * @argv: array with the arguments
+ *
+ * Return: integer on success
+ */
 int main(int argc, char *argv[])
 {
-	int n1, n2, result;
-	int (*p)(int, int);
+	int (*point)(int, int);
+	int res, c, d;
 
-	if (argc < 4 || argc > 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+	if (argc != 4)
+		return (__RETURN__(98));
 
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[3]);
+	c = atoi(argv[3]);
+	if (c == 0 && (*argv[2] == '%' || *argv[2] == '/'))
+		return (__RETURN__(100));
 
-	p = get_op_func(argv[2]);
+	point = get_op_func(argv[2]);
+	if (point == NULL)
+		return (__RETURN__(99));
 
-	if (p == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	result = p(n1, n2);
+	c = atoi(argv[1]);
+	d = atoi(argv[3]);
 
-	printf("%d\n", result);
+	res = point(c, d);
+	printf("%d\n", res);
+
 	return (0);
 }
-
