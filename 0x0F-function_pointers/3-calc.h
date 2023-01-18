@@ -1,9 +1,10 @@
-#ifndef 3-CALC_H
-#define 3-CALC_H
+#ifndef CALCFUNC
+#define CALCFUNC
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 /**
  * struct op - Short description
  * @op: the operator to ve examined
@@ -24,4 +25,4 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *s))(int, int);
 
-#endif /* 3-CALC_H */
+#endif /* CALCFUNC */
