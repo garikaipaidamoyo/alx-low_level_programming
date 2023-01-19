@@ -10,17 +10,17 @@
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
+	va_list args;
 	unsigned int i;
-	char *og;
+	char *str;
 
-	va_start(ap, n);
+	va_start(args, n);
 
 	for (i = 0; i < n; i++)
 	{
-		og = (va_arg(ap, char*));
-		if (og != NULL)
-			printf("%s", og);
+		printf("%s",va_arg(args, char));
+		if (str != NULL)
+			printf("%s", str);
 		else
 			printf("(nil)");
 
