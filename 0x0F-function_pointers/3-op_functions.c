@@ -1,61 +1,35 @@
-#include "3-main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
 /**
- * op_add - plus two integers
- * @a: value
- * @b: value
- *
- * Return: integer
+ * main - main function
+ * @argc: the argument counter
+ * @argv: the array of arguments
+ * Return: 0 if successful
  */
-int op_add(int a, int b)
+int main(int argc, char *argv[])
 {
-	return (a + b);
-}
 
-/**
- * op_sub - Substract to numbers
- * @a: value
- * @b: value
- *
- * Return: integer
- */
-int op_sub(int a, int b)
-{
-	return (a - b);
-}
+	int a, b, c;
+	int (*p)(int, int);
 
-/**
- * op_mul - multiply two numbers
- * @a: value
- * @b: value
- *
- * Return: integer
- */
-int op_mul(int a, int b)
-{
-	return (a * b);
-}
+	if (argc != 4)
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
-/**
- * op_div - divide two numbers
- * @a: value
- * @b: value
- *
- * Return: integer
- */
-int op_div(int a, int b)
-{
-	return (a / b);
-}
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-/**
- * op_mod - mod of two numbers
- * @a: value
- * @b: value
- *
- * Return: integer
- */
-int op_mod(int a, int b)
-{
-	return (a % b);
+	p = get_op_func(argv[2]);
+	if (p == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	c = (*p)(a, b);
+
+	printf("%d\n", c);
+	return (0);
 }

@@ -1,35 +1,35 @@
-#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "3-calc.h"
 /**
- * main - entry - point
- * @argc: number of arguments
- * @argv: array with the arguments
- *
- * Return: integer on success
+ * main - main function
+ * @argc: the argument counter
+ * @argv: the array of arguments
+ * Return: 0 if successful
  */
 int main(int argc, char *argv[])
 {
-	int (*point)(int, int);
-	int res, c, d;
+
+	int a, b, c;
+	int (*p)(int, int);
 
 	if (argc != 4)
-		return (__RETURN__(98));
+	{
+		printf("Error\n");
+		exit(98);
+	}
 
-	c = atoi(argv[3]);
-	if (c == 0 && (*argv[2] == '%' || *argv[2] == '/'))
-		return (__RETURN__(100));
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
-	point = get_op_func(argv[2]);
-	if (point == NULL)
-		return (__RETURN__(99));
+	p = get_op_func(argv[2]);
+	if (p == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	c = (*p)(a, b);
 
-	c = atoi(argv[1]);
-	d = atoi(argv[3]);
-
-	res = point(c, d);
-	printf("%d\n", res);
-
+	printf("%d\n", c);
 	return (0);
 }
