@@ -1,5 +1,5 @@
-#ifndef 3_CALC_H
-#define 3_CALC_H
+#ifndef 3-CALC_H
+#define 3-CALC_H
 
 #define __RETURN__(value) \
 	(__extension__ \
@@ -29,5 +29,5 @@ int op_div(int a, int b);
 int op_mod(int a, int b);
 int (*get_op_func(char *))(int, int);
 
-#endif /* 3_CALC_H */
+#endif /* 3-CALC_H */
 
