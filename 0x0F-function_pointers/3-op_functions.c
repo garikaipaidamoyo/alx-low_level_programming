@@ -1,35 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "3-calc.h"
 /**
- * main - main function
- * @argc: the argument counter
- * @argv: the array of arguments
- * Return: 0 if successful
+ * op_add - entry point
+ * @a: get number 1
+ * @b: get number 2
+ * Return: add between a and b
  */
-int main(int argc, char *argv[])
+int op_add(int a, int b)
 {
-
-	int a, b, c;
-	int (*p)(int, int);
-
-	if (argc != 4)
-	{
-		printf("Error\n");
-		exit(98);
-	}
-
-	a = atoi(argv[1]);
-	b = atoi(argv[3]);
-
-	p = get_op_func(argv[2]);
-	if (p == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	c = (*p)(a, b);
-
-	printf("%d\n", c);
-	return (0);
+	return (a + b);
+}
+/**
+ * op_sub - entry point
+ * @a: get number 1
+ * @b: get number 2
+ * Return: return subtation between a and b
+ */
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+/**
+ * op_mul - entry point
+ * @a: get number 1
+ * @b: get number 2
+ * Return: return multiplication between a and b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_div - entry point
+ * @a: get number 1
+ * @b: get number 2
+ * Return: return division between a and b
+ */
+int op_div(int a, int b)
+{
+	return (a / b);
+}
+/**
+ * op_mod - entry point
+ * @a: get number 1
+ * @b: get number 2
+ * Return: return module between a and b
+ */
+int op_mod(int a, int b)
+{
+	return (a % b);
 }
