@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - entry point
  * @argc: arguments number

@@ -1,4 +1,5 @@
 #include "3-calc.h"
+
 /**
  * get_op_func - entry point
  * @s: get sign to operate
