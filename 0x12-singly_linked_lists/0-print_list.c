@@ -2,7 +2,7 @@
 
 /**
  * print_list - prints all the elements of a list_t list
- * @h: it prints
+ * @h: the list_t list
  *
  * Return: always zero
  */
