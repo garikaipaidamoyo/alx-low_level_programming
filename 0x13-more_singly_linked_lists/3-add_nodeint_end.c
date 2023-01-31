@@ -2,8 +2,8 @@
 
 /**
  * add_nodeint_end - adds a new node at the end of a listint_t list
- * @head:
- * @n:
+ * @head: double pointer at the beginning of the list
+ * @n: integer to add to the list
  *
  * Return: the address of the new element, NULL if it failed
  */
