@@ -9,16 +9,13 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int i;
+	size_t count = 0;
 
-	for (i = 0; h ; i++)
+	while (h != NULL)
 	{
-		if (h->str == '\0')
-			printf("[0] (nil)\n");
-		else
-			printf("[%i] %s\n", h->len, h->str);
+		printf("%d\n", h->n);
 		h = h->next;
+		count++;
 	}
-
-	return (i);
+	return (count);
 }
