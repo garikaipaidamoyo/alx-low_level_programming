@@ -1,0 +1,6 @@
+# How to Create a Dynamic Library
+-To create a dynamic library in Linux, simply type the following command: gcc *.c -c -fPIC and hit return. This command essentially generates one object file .o for each source file .c . The -fPIC flag ensures that the code is position-independent. This means it wouldn’t matter where the computer loads the code into memory. Some operating systems and processors need to build libraries from position-independent code so that they can decide at runtime where they want to load it into memory. The -c options just ensures that each .o file isn’t linked yet.
+
+Next, type in the following command: gcc *.o -shared -o liball.so (substitute your desired library name with all) and hit return. The wildcard * tells the compiler to compile all the .o files into a dynamic library which is specified by the -shared flag. The naming convention for dynamic libraries is such that each shared library name must start with lib and end with .so . Other than that though, let your imagination run free when considering names for your dynamic libraries.
+
+Finally, we’ll need to export the path for libraries so that programs know where to look for them by executing the following command: export LD_LIBRARY_PATH=$PWD:$LD_LIBRARY_PATH
